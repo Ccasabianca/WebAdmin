@@ -479,8 +479,8 @@ border-bottom-right-radius: 10px;
 .overview-section table th {
   background-color: #f4f6fc;
   color: #1f384c;
-  border-radius: 10px;
 }
+
 
 .table1 {
   font-weight: 500;
@@ -539,4 +539,5 @@ footer li {
   background-color: #ffffff;
   border-radius: 6px;
   padding: 10px 15px 10px 15px;
+
 }
