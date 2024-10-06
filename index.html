@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Admin Dashboard</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="assets/logotype.png" alt="Logotype"></a>
+            </div>
+            <nav class="menu">
+                <span class="separator">MENU</span>
+                <ul>
+                    <li class="sidebar-bg-purple"><img src="assets/dashboard_icon.png" alt=""><a href="#"
+                            class="sidebar-purple">Dashboard</a></li>
+                    <li><i class="fa-solid fa-box"></i><a href="#">Order</a></li>
+                    <li><i class="fa-solid fa-chart-simple"></i><a href="#">Report</a></li>
+                    <li><i class="fa-solid fa-truck"></i><a href="#">Track</a></li>
+                    <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="#">Maintenance</a></li>
+                    <li class="separator">SYSTEM</li>
+                    <li><i class="fa-solid fa-folder-open"></i><a href="#">Master Data</a></li>
+                    <li><i class="fa-solid fa-user"></i><a href="#">User</a></li>
+                    <li><i class="fa-solid fa-users"></i><a href="#">Role</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navbar -->
+            <nav class="top-nav">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <svg style="width:25px;float:left;fill:grey" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="navlinks">
+                    <a href="#"><img src="assets/burger.png" alt="Burger" class="navlink"></a>
+                    <div class="navlink">Delicious Burger
+                        <a href=""><img src="assets/chevron_down.png" alt="Chevron down"></a>
+                    </div>
+                    <a href="#"><img src="assets/notif.png" alt="Notification" class="navlink"></a>
+                </div>
+            </nav>
+            <!-- Dashboard Section -->
+            <section class="dashboard-section">
+                <h1>Dashboard</h1>
+                <div class="dashboard-grid">
+                    <div class="stat-box-1">
+                        <img src="assets/camion1.png" alt="Camion" height="63" width="63">
+                        <div class="stat-info-1">
+                            <div class="stat-top">
+                                <h3>2.409</h3>
+                                <span class="greentext"><img src="assets/Arrow Up.png" alt="Arrow up">2.1%</span>
+                            </div>
+                            <p>Jumlah Pesanan</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <img src="assets/camion2.png" alt="Camion" height="63" width="63">
+                        <div class="stat-info">
+                            <h3>68.9%</h3>
+                            <p>Pesanan Selesai</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <img src="assets/camion3.png" alt="Camion" height="63" width="63">
+                        <div class="stat-info">
+                            <h3>68.9%</h3>
+                            <p>KPI Driver</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <img src="assets/camion4.png" alt="Camion" height="63" width="63">
+                        <div class="stat-info">
+                            <h3>3.509</h3>
+                            <p>Total Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Statistik Pemesanan -->
+            <section class="charts-section">
+                <div class="chart-box">
+                    <div class="title">
+                        <h3>Statistik Pemesanan</h3>
+                        <a href="#"><i class="fa-solid fa-calendar"></i> 18/12/2021</a>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-label-vertical">
+                            <span>1000</span>
+                            <span>900</span>
+                            <span>800</span>
+                            <span>700</span>
+                            <span>600</span>
+                            <span>500</span>
+                            <span>400</span>
+                            <span>300</span>
+                            <span>200</span>
+                            <span>100</span>
+                            <span>0</span>
+                        </div>
+                        <div>
+                            <div class="chart">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="chart-label-horizontal">
+                                <span></span>
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>Mei</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                                <span>Sep</span>
+                                <span>Okt</span>
+                                <span>Nov</span>
+                                <span>Des</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="customer-list">
+                    <h3>Customer Pemesan Terbanyak</h3>
+                    <table>
+                        <tr>
+                            <td class="tableleft">PT Javan Cipta Solusi</td>
+                            <td class="tableright">450</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">CV ABCD</td>
+                            <td class="tableright">449</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">CV OQURY TRESNA ANJANI</td>
+                            <td class="tableright">443</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">PT Javan Solusi</td>
+                            <td class="tableright">441</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">PT Insan Cipta Solusi</td>
+                            <td class="tableright">420</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">PT Mitra Informatika</td>
+                            <td class="tableright">412</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">PT Gamatechno Indonesia</td>
+                            <td class="tableright">411</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">Patra Jasa</td>
+                            <td class="tableright">390</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">Patra Arun Badak</td>
+                            <td class="tableright">387</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">Pertamina Corporate University</td>
+                            <td class="tableright">376</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">Pertamina RU IV</td>
+                            <td class="tableright">361</td>
+                        </tr>
+                        <tr>
+                            <td class="tableleft">PT Pertamina Kilang Balikpapan</td>
+                            <td class="tableright">355</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Overview Pemesanan -->
+            <section class="overview-section">
+                <div class="head">
+                    <h2>Overview Pemesanan</h2>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <table>
+                    <thead>
+                        <tr class="bold">
+                            <th>No</th>
+                            <th>Nama Customer</th>
+                            <th>Jenis</th>
+                            <th>Kuantitas</th>
+                            <th>Tanggal Pengiriman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table1">
+                            <td>1</td>
+                            <td>Brad Simmons</td>
+                            <td>Pertamax</td>
+                            <td>2000 Liter</td>
+                            <td>21 Desember 2021</td>
+                        </tr>
+                        <tr class="table2">
+                            <td>2</td>
+                            <td>Jessie Clarcson</td>
+                            <td>Turbo</td>
+                            <td>2000 Liter</td>
+                            <td>20 Desember 2021</td>
+                        </tr>
+                        <tr class="table1">
+                            <td>1</td>
+                            <td>Brad Simmons</td>
+                            <td>Pertamax</td>
+                            <td>2000 Liter</td>
+                            <td>21 Desember 2021</td>
+                        </tr>
+                        <tr class="table2">
+                            <td>2</td>
+                            <td>Jessie Clarcson</td>
+                            <td>Turbo</td>
+                            <td>2000 Liter</td>
+                            <td>20 Desember 2021</td>
+                        </tr>
+                        <tr class="table1">
+                            <td>1</td>
+                            <td>Brad Simmons</td>
+                            <td>Pertamax</td>
+                            <td>2000 Liter</td>
+                            <td>21 Desember 2021</td>
+                        </tr>
+                        <tr class="table2">
+                            <td>2</td>
+                            <td>Jessie Clarcson</td>
+                            <td>Turbo</td>
+                            <td>2000 Liter</td>
+                            <td>20 Desember 2021</td>
+                        </tr>
+                        <tr class="table1">
+                            <td>1</td>
+                            <td>Brad Simmons</td>
+                            <td>Pertamax</td>
+                            <td>2000 Liter</td>
+                            <td>21 Desember 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Pagination -->
+            <footer>
+                <ul>
+                    <li class="footerliprev boldtext">Prev</li>
+                    <li class="footerli1">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="footerlinext boldtext">Next</li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
